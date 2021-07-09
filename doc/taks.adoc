@@ -1,0 +1,58 @@
+= Create different collections
+
+== Adott az alábbi tömb:
+
+int[] numbers = {1, 2, 7, 2, 3, 4, 10, 8, 9, 11, 5, 4, 3, 6, 5, 6, 5, 1, 8, 10, 9, 15};
+
+'''
+
+1. Készíts Set-et ebből a tömbből úgy, hogy végigmész a tömbön, és egyesével hozzáadod a Set-hez a tömbben szereplő számokat.
+(Van erre built-in Java módszer is, de most ne azt használd!)
+Hány darab különböző számot tartalmaz a tömb? (A létrehozott Set alapján ez már könnyen megmondható.)
+Gondolkozz! Miért nem jó a kérdés megválaszolására, ha List-et készítesz Set helyett? És milyen sorrendben szerepelnek a
+számok a létrehozott Set-ben? (Írd ki a képernyőre, nézd meg!)
+
+
+2. Az előző feladat tömbjét használd!
+Válogasd szét a tömb számait: külön legyenek a párosok, külön a páratlanok. Ezúttal is használj Set-et!
+Hány darab különböző páros és páratlan számot tartalmaz a tömb?
+
+
+
+3. Készíts egy dobókockát (random szám generálás 1-6 között), amivel dobj 1000-szer!
+A dobás eredményeit Map-ben tárold, ahol a kulcs a dobott szám, a kulcshoz tartozó érték pedig az, hogy hányszor dobtad
+azt a számot.
+A dobások után írd ki a Map tartalmát a képernyőre! (Vagyis azt, hogy melyik számot hányszor dobtad.)
+
+
+Hints:
+
+https://www.geeksforgeeks.org/hashmap-putifabsentkey-value-method-in-java-with-examples/
+
+Gondolkozz! Alkalmas lenne erre a feladatra egy tömb vagy akár egy List is a Map helyett? És ha azt mondom, hogy ne
+dobókockád legyen, hanem random számot generálj 1 és 10000000 között tízmilliárdszor, és annak az eredményét tárold?
+
+== Adott az alábbi tömb:
+
+int[] numbers = {34808, 422, 334, 12014, 412617, 292389, 342260, 32244, 334534, 497721, 3775, 544, 433, 55340, 257952,
+1496173, 539141, 3355, 305720, 3677429, 114047, 5656 };
+
+
+4.
+
+- Van ismétlődés a tömbben? (Szerepel-e többször ugyanaz a szám?)
+- Hány számjegyből állnak a számok a tömbben? Írd ki a képernyőre mindegyiket egyesével!
+- Hány különböző számjegyből állnak a számok a tömbben? (Hint: Set.)
+- Hány szám van, ami a különböző számjegyekből áll? (Hint: Map.)
+- És melyik szám melyik számjegyhez tartozik - úgymond? Válogasd szét a számjegyeket az alapján, hogy hány számjegyből
+állnak! (Hint: a Map-ben értékként tárolhatsz adatstruktúrákat.)
+
+'''
+
+Extra:
+
+Készíts adatstruktúrát, amelyben diákok nevét és a tanév közben szerzett osztályzataikat tudod tárolni!
+Biztosra veheted, hogy a diákok neve egyedi, az osztályzataik pedig 1 és 5 közötti szám (beleértve a két szélső értéket).
+Azonban azt előre nem tudhatod, hogy melyik diák hány osztályzatot szerez a tanévben.
+Töltsd fel néhány teszt-adattal az adatstruktúrádat! Ezután számíts átlagot mindegyik diáknál. (Ügyelj arra, hogy az
+átlag minél pontosabb legyen, ne kerekített!)
